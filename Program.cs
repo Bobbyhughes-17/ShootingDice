@@ -18,6 +18,55 @@ namespace ShootingDice
 
             Console.WriteLine("-------------------");
 
+            SmackTalkingPlayer toby = new SmackTalkingPlayer();
+            toby.Name = "Toby";
+
+            player1.Play(toby);
+
+            Console.WriteLine("-------------------");
+
+            OneHigherPlayer barb = new OneHigherPlayer();
+            barb.Name = "Barb";
+
+            player1.Play(barb);
+
+            Console.WriteLine("-------------------");
+
+            CreativeSmackTalkingPlayer cstp = new CreativeSmackTalkingPlayer();
+            cstp.Name = "CSTP";
+
+            cstp.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            HumanPlayer human = new HumanPlayer();
+            human.Name = "human";
+
+            human.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            SoreLoserPlayer sore = new SoreLoserPlayer();
+            sore.Name = "Sore Loser";
+
+            sore.Play(player1);
+
+            Console.WriteLine("-------------------");
+
+            UpperHalfPlayer upperhalf = new UpperHalfPlayer();
+            upperhalf.Name = "Upper Half";
+
+            upperhalf.Play(player2);
+
+            Console.WriteLine("-------------------");
+
+            SoreLoserUpperHalfPlayer soreupper = new SoreLoserUpperHalfPlayer();
+            soreupper.Name = "sore upper half";
+
+            soreupper.Play(player1);
+
+            Console.WriteLine("-------------------");
+
             Player player3 = new Player();
             player3.Name = "Wilma";
 
